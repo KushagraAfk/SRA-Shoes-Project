@@ -1,7 +1,13 @@
+import FeaturedCategories from "@/components/home/FeaturedCategories";
+import Hero from "@/components/home/Hero";
+import TrustStrip from "@/components/home/TrustStrip";
+
 export default function HomePage() {
   return (
-    <main>
-      <h1>Footwear Showcase</h1>
-    </main>
+    <>
+      <Hero />
+      <TrustStrip />
+      <FeaturedCategories />
+    </>
   );
 }
