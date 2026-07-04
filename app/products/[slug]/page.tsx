@@ -1,3 +1,5 @@
+export const runtime = "edge";
+
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { products } from "@/data/products";
