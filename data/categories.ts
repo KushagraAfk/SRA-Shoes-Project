@@ -1,32 +1,32 @@
 export const categories = [
   {
     title: "Formal Shoes",
-    image: "https://picsum.photos/600/600?random=1",
+    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1200",
     href: "/products",
   },
   {
     title: "Safety Shoes",
-    image: "https://picsum.photos/600/600?random=2",
+    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1200",
     href: "/products",
   },
   {
     title: "Leather Boots",
-    image: "https://picsum.photos/600/600?random=3",
+    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1200",
     href: "/products",
   },
   {
     title: "School Shoes",
-    image: "https://picsum.photos/600/600?random=4",
+    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1200",
     href: "/products",
   },
   {
     title: "Casual Footwear",
-    image: "https://picsum.photos/600/600?random=5",
+    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1200",
     href: "/products",
   },
   {
     title: "Custom Manufacturing",
-    image: "https://picsum.photos/600/600?random=6",
+    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1200",
     href: "/products",
   },
 ];

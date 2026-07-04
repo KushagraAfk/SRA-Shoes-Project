@@ -14,9 +14,9 @@ export default function Hero() {
             </p>
 
             <h1 className="max-w-xl text-4xl font-bold leading-tight text-neutral-900 md:text-5xl lg:text-6xl">
-              Premium Leather Footwear
+              Leather Footwear
               <br />
-              Crafted in Agra
+              Manufacturing Excellence
             </h1>
 
             <p className="mt-6 max-w-lg text-base leading-7 text-neutral-600 md:text-lg">

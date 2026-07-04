@@ -1,6 +1,6 @@
 export const siteConfig = {
   companyName: "SRA Shoes",
-  tagline: "Premium Leather Footwear Manufacturer Since 1988",
+  tagline: "Premium leather footwear manufacturer serving wholesalers, retailers and institutional buyers with quality craftsmanship since 1988.",
 
   phone: "+91 9876543210",
   whatsapp: "+91 9876543210",

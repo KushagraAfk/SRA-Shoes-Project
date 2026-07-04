@@ -14,12 +14,15 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b bg-white">
       <Container>
-        <div className="flex h-18 items-center justify-between">
-          <Link
-            href="/"
-            className="text-2xl font-bold tracking-wide text-gray-900"
-          >
-            {siteConfig.companyName}
+        <div className="flex h-20 items-center justify-between">
+          <Link href="/" className="leading-tight">
+            <h1 className="text-2xl font-bold tracking-wide text-neutral-900">
+                {siteConfig.companyName}
+            </h1>
+
+            <p className="text-xs text-neutral-500">
+                Manufacturing Excellence Since 1988
+            </p>
           </Link>
 
           <nav className="hidden items-center gap-8 lg:flex">
