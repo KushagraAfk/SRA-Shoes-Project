@@ -5,17 +5,21 @@ export default function AboutHero() {
     <Section className="bg-stone-100">
       <div className="mx-auto max-w-3xl text-center">
         <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-amber-700">
-          About Us
+          About SRA Shoes
         </p>
 
         <h1 className="text-5xl font-bold text-neutral-900">
-          Manufacturing Quality Leather Footwear Since 1988
+          Trusted Leather Footwear
+          <br />
+          Supplier Since 1988
         </h1>
 
-        <p className="mt-6 text-lg text-neutral-600">
-          We are a leather footwear manufacturer based in Agra, committed to
-          delivering premium craftsmanship, dependable quality, and long-term
-          partnerships with wholesalers, retailers, and institutional buyers.
+        <p className="mt-6 text-lg leading-8 text-neutral-600">
+          SRA Shoes is a trusted supplier and distributor of premium leather
+          footwear, serving retailers, wholesalers, and institutional buyers
+          across India. By partnering with established manufacturers, we deliver
+          quality products, competitive pricing, and dependable service tailored
+          to our customers' needs.
         </p>
       </div>
     </Section>

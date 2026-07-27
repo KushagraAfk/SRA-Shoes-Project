@@ -1,10 +1,13 @@
 import Link from "next/link";
-import { products } from "@/data/products";
 import ProductCard from "../products/ProductCard";
 import Section from "../ui/Section";
 import SectionHeading from "../ui/SectionHeading";
+import { client } from "@/lib/sanity";
+import { productsQuery } from "@/lib/queries";
 
-export default function FeaturedProducts() {
+export default async function FeaturedProducts() {
+  const products = await client.fetch(productsQuery);
+
   return (
     <Section>
       <SectionHeading
@@ -14,14 +17,14 @@ export default function FeaturedProducts() {
       />
 
       <div className="grid gap-8 lg:grid-cols-3">
-        {products.map((product) => (
+        {products.slice(0, 3).map((product: any) => (
           <ProductCard
-            key={product.id}
+            key={product._id}
             name={product.name}
-            slug={product.slug}
+            slug={product.slug.current}
             category={product.category}
             description={product.description}
-            image={product.images[0]}
+            image={product.image}
           />
         ))}
       </div>

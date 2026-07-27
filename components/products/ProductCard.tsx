@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { urlFor } from "@/lib/sanity";
 
 interface ProductCardProps {
   slug: string;
   name: string;
   category: string;
   description: string;
-  image: string;
+  image: any;
 }
 
 export default function ProductCard({
@@ -17,14 +18,15 @@ export default function ProductCard({
   image,
 }: ProductCardProps) {
   return (
-    <Link
-      href={`/products/${slug}`}
-      className="block"
-    >
+    <Link href={`/products/${slug}`} className="block">
       <div className="group overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
         <div className="relative h-72 overflow-hidden">
           <Image
-            src={image}
+            src={
+              typeof image === "string"
+                ? image
+                : urlFor(image).width(600).height(600).url()
+          }
             alt={name}
             fill
             sizes="(max-width:768px)100vw,(max-width:1200px)50vw,33vw"
